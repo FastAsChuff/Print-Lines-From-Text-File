@@ -62,9 +62,9 @@ int32_t printhelp() {
 int32_t main(int32_t argc, char* argv[]) {
   if (argc <= 1) printhelp();
 #ifdef WIN32
-  char * goodfilename_rx = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWZYZ0123456789_.\\"; 
+  char * goodfilename_rx = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWZYZ0123456789-_.\\"; 
 #else
-  char * goodfilename_rx = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWZYZ0123456789_./"; 
+  char * goodfilename_rx = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWZYZ0123456789-_./"; 
 #endif
   int64_t linenum1, linenum2;
   _Bool printlinenumbers = false;
